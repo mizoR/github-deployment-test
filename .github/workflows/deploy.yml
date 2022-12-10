@@ -1,4 +1,4 @@
-name: 'Deploy'
+name: Deploy
 
 on:
   push:
@@ -14,4 +14,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
       - run: echo 'Deploy'
